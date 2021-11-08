@@ -23,7 +23,7 @@ const dumpToFile = function (path, name = 'schema') {
   const currentPath = __dirname.split('node_modules')[0] || __dirname
   const savePath =  `${currentPath}/${name}.gql`
   composeSchema(path).then(data => {
-    fs.writeFile(`${savePath}.gql`, data, function (err) {
+    fs.writeFile(`${savePath}`, data, function (err) {
       if (err) { return console.error(err) }
       console.log(`your schema ${name}.gql saved to ${savePath}`);
     });

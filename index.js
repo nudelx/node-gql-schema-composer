@@ -20,7 +20,8 @@ const composeSchema = async function (path) {
 }
 
 const dumpToFile = function (path, name = 'schema') {
-  console.log(`${__dirname}/${name}.gql`)
+  const currentPath = __dirname.split('node_modules')[0] || __dirname
+  console.log(`${currentPath}/${name}.gql`)
   composeSchema(path).then(data => {
     fs.writeFile(`${__dirname}/${name}.gql`, data, function (err) {
       if (err) { return console.log(err) }

@@ -21,11 +21,11 @@ const composeSchema = async function (path) {
 
 const dumpToFile = function (path, name = 'schema') {
   const currentPath = __dirname.split('node_modules')[0] || __dirname
-  console.log(`${currentPath}/${name}.gql`)
+  const savePath =  `${currentPath}/${name}.gql`
   composeSchema(path).then(data => {
-    fs.writeFile(`${__dirname}/${name}.gql`, data, function (err) {
-      if (err) { return console.log(err) }
-      console.log(`your schema ${name}.gql saved`);
+    fs.writeFile(`${savePath}.gql`, data, function (err) {
+      if (err) { return console.error(err) }
+      console.log(`your schema ${name}.gql saved to ${savePath}`);
     });
   })
 }

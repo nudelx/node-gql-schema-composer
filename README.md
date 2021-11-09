@@ -1,0 +1,1 @@
+<center><img src="https://raw.githubusercontent.com/nudelx/node-gql-schema-composer/main/doc/title_img.png"/></center>

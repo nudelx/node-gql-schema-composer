@@ -3,7 +3,7 @@
 ### A tiny and minimalist, with minimum dependencies tool that allows you to use and split and organize the native gql files in your node project.
 <br/>
 <br/>
----
+<br />
 
 <center><img width="600px" style="max-width: 100%; margin-right: auto;  margin-left: auto; " src="https://raw.githubusercontent.com/nudelx/node-gql-schema-composer/main/doc/title_img.png"/></center>
 

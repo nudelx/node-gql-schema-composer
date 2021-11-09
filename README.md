@@ -102,7 +102,7 @@ Just add the following tweak to your script in the `package.json` file:
  "start": "nodemon --watch **/*.gql index.js"
 ```
 
-and now your nodemon will be also sensitive to the changes in your gql files:
+and now your nodemon will be also sensitive to the changes in your `.gql` files:
 ```bash
 ❯ yarn start
 yarn run v1.22.17
@@ -128,22 +128,22 @@ The module provides 3 simple functions:
 ```js
   function composeSchema( path ) {...}
 
-  /*  async function which will compose on the fly all your chunks gql files
+  /*  async function which will compose on-the-fly all your chunks .gql files
   *   into one schema used by graphql
   *   
   *   PARAMS: 
-  *     < path:string > the place where you will have all your gql files/folders 
+  *     < path:string > the place where you will have all your .gql files/folders 
   */
 ```
 
 ```js
   function dumpToFile( path, name ) {...}
 
-  /*  a simple dump function which will compose all your chunks gql files
+  /*  a simple dump function which will compose all your chunks .gql files
   *   into one schema and will write it into one single file in the root folder, according to the name, which is has a default *   name "schema"
   *   
   *   PARAMS: 
-  *     < path:string > the place where you will have all your gql files/folders 
+  *     < path:string > the place where you will have all your .gql files/folders 
   *     < name:string | optional> the name of dump file ( default: "schema.gql")
   */
 ```

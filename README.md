@@ -24,7 +24,7 @@ You can use native gql files in your nodejs/graphql project. You can split and o
 const express = require('express')
 const { graphqlHTTP } = require('express-graphql');
 const { buildSchema } = require('graphql');
-const { composeSchema } = require('node-gql-file-composer')
+const { composeSchema } = require('node-gql-schema-composer')
 
 const app = express()
 composeSchema('./gql')
@@ -44,7 +44,7 @@ composeSchema('./gql')
 const express = require('express')
 const { graphqlHTTP } = require('express-graphql');
 const { buildSchema } = require('graphql');
-const { composeSchema, dumpToFile, readFolder } = require('node-gql-file-composer')
+const { composeSchema, dumpToFile, readFolder } = require('node-gql-schema-composer')
 
 const start = async function () {
 
@@ -70,7 +70,7 @@ start()
 const express = require('express')
 const { graphqlHTTP } = require('express-graphql');
 const { buildSchema } = require('graphql');
-const { composeSchema, dumpToFile } = require('node-gql-file-composer')
+const { composeSchema, dumpToFile } = require('node-gql-schema-composer')
 
 const start = async function () {
 

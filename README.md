@@ -193,4 +193,4 @@ The module provides 3 simple functions:
   */
 ```
 
-made with ❤️ by Nudelman Alex 
+Made with ❤️ by Nudelman Alex 

@@ -64,7 +64,42 @@ const start = async function () {
 start()
 ```
 
-### Dump to the Schema File:
+### With Apollo Server:
+```js
+const express = require('express')
+const { buildSchema } = require('graphql')
+const { composeSchema, dumpToFile } = require('node-gql-schema-composer')
+const  { ApolloServer } = require( 'apollo-server-express')
+const { ApolloServerPluginDrainHttpServer } = require( 'apollo-server-core')
+const http = require( 'http')
+const Query = {
+  hello: () => {
+    return 'Hello world!'
+  },
+}
+
+
+async function startApolloServer(resolvers) {
+  const app = express()
+  const typeDefs = buildSchema(await composeSchema('./gql'))
+  const httpServer = http.createServer(app)
+  const server = new ApolloServer({
+    typeDefs,
+    resolvers,
+    plugins: [ApolloServerPluginDrainHttpServer({ httpServer })],
+  })
+
+  await server.start()
+  server.applyMiddleware({ app })
+  await new Promise(resolve => httpServer.listen({ port: 4000 }, resolve))
+  console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
+}
+
+startApolloServer({ Query })
+ 
+```
+
+### Dump to the schema file:
 
 ```js
 const express = require('express')

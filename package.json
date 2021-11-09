@@ -22,7 +22,8 @@
     "graphql",
     "compose",
     "express",
-    "command",
-    "run command"
+    "schema",
+    "dump",
+    "tool"
   ]
 }

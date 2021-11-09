@@ -1,6 +1,6 @@
 # 🟢  NodeJS GraphQL Composer
 
-### A tiny and minimalist, with minimum dependencies tool that allows you to use and split and organize the native gql files in your node project.
+### A tiny and minimalist, with minimum dependencies tool, which allows you to use, split and organize the native GQL files in your NodeJs project.
 <br/>
 <br/>
 <br />

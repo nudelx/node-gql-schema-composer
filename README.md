@@ -127,7 +127,8 @@ dumpToFile('./gql')  // it will create a composed schema file in the root folder
 start()
 ```
 <img style="max-width: 100%; margin-right: auto;  margin-left: auto; " src="https://raw.githubusercontent.com/nudelx/node-gql-schema-composer/main/doc/dump.png"/>
-<br/><br/>
+
+<br><br>
 
 ### Auto restart with `nodemon`: 
 
@@ -157,7 +158,7 @@ Now browse to localhost:4000/graphql
 Now browse to localhost:4000/graphql
 ```
 
-<br/><br/>
+<br>
 
 ## Inside
 

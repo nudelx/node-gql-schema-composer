@@ -192,3 +192,5 @@ The module provides 3 simple functions:
   /*  async internal function which will read and find all your .gql|.graphql files under provided path 
   */
 ```
+
+made with ❤️ by Nudelman Alex 

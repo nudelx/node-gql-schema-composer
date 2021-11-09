@@ -1,8 +1,8 @@
 # 🟢  NodeJS GraphQL Composer
 
-### A tiny and minimalist, with minimum dependencies tool, which allows you to use, split and organize the native GQL files in your NodeJs project.
-<br/>
-<br/>
+ A tiny and minimalist, with minimum dependencies tool, which allows you to use, split and organize the native GQL files in your NodeJs project.
+<br />
+<br />
 <br />
 
 <center><img width="600px" style="max-width: 100%; margin-right: auto;  margin-left: auto; " src="https://raw.githubusercontent.com/nudelx/node-gql-schema-composer/main/doc/title_img.png"/></center>
@@ -92,6 +92,7 @@ start()
 ```
 <img style="max-width: 100%; margin-right: auto;  margin-left: auto; " src="https://raw.githubusercontent.com/nudelx/node-gql-schema-composer/main/doc/dump.png"/>
 <br/><br/>
+
 ### Auto restart with `nodemon`: 
 
 You can the files extension to the nodemon and enjoy the auto-restarting behaviors on each change in gql files.

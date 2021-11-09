@@ -122,7 +122,8 @@ Now browse to localhost:4000/graphql
 ```
 
 <br/><br/>
-## Usage
+
+## Inside
 
 The module provides 3 simple functions:
 ```js

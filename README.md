@@ -193,4 +193,4 @@ The module provides 3 simple functions:
   */
 ```
 
-Made with <span>❤️ &nbsp;</span> by Nudelman Alex 
+Made with <span> &nbsp;❤️ &nbsp;</span> by Nudelman Alex 

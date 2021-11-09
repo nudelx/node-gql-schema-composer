@@ -91,8 +91,36 @@ dumpToFile('./gql')  // it will create a composed schema file in the root folder
 start()
 ```
 <img style="max-width: 100%; margin-right: auto;  margin-left: auto; " src="https://raw.githubusercontent.com/nudelx/node-gql-schema-composer/main/doc/dump.png"/>
+<br/><br/>
+### Auto restart with `nodemon`: 
 
+You can the files extension to the nodemon and enjoy the auto-restarting behaviors on each change in gql files.
+Just add the following tweak to your script in the `package.json` file:
 
+```js
+ "start": "nodemon --watch **/*.gql index.js"
+```
+
+and now your nodemon will also sensitive to the changes in your gql files:
+```bash
+❯ yarn start
+yarn run v1.22.17
+$ nodemon --watch **/*.gql index.js
+[nodemon] 2.0.14
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): gql/index.gql
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node index.js`
+Now browse to localhost:4000/graphql
+
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+Now browse to localhost:4000/graphql
+```
+
+<br/><br/>
 ## Usage
 
 The module provides 3 simple functions:

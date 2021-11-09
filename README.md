@@ -102,7 +102,7 @@ Just add the following tweak to your script in the `package.json` file:
  "start": "nodemon --watch **/*.gql index.js"
 ```
 
-and now your nodemon will also sensitive to the changes in your gql files:
+and now your nodemon will be also sensitive to the changes in your gql files:
 ```bash
 ❯ yarn start
 yarn run v1.22.17

@@ -6,6 +6,23 @@
   "dependencies": {
     "glob": "7.2.0"
   },
-  "repository": "git@github.com:nudelx/node-gql-schema-composer.git",
-  "author": "Alex Nudelman <nudelx@gmail.com>"
+  "author": "Alex Nudelman <nudelx@gmail.com>",
+  "homepage": "https://github.com/nudelx/node-gql-schema-composer",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nudelx/node-gql-schema-composer.git",
+    "web": "https://github.com/nudelx/node-gql-schema-composer"
+  },
+  "bugs": {
+    "url": "https://github.com/nudelx/node-gql-schema-composer/issues/"
+  },
+  "keywords": [
+    "nodejs",
+    "gql",
+    "graphql",
+    "compose",
+    "express",
+    "command",
+    "run command"
+  ]
 }

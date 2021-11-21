@@ -24,8 +24,8 @@ const dumpToFile = function (path, name = 'schema') {
   composeSchema(path).then(data => {
     fs.writeFile(`${savePath}`, data, function (err) {
       if (err) { return console.error(err) }
-      console.log(`your schema ${name}.gql saved to ${savePath}`);
-    });
+      console.log(`your schema ${name}.gql saved to ${savePath}`)
+    })
   })
 }
 

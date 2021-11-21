@@ -68,7 +68,6 @@ start()
 ### With Apollo Server:
 ```js
 const express = require('express')
-const { buildSchema } = require('graphql')
 const { composeSchema, dumpToFile } = require('node-gql-schema-composer')
 const  { ApolloServer } = require( 'apollo-server-express')
 const { ApolloServerPluginDrainHttpServer } = require( 'apollo-server-core')
@@ -82,7 +81,7 @@ const Query = {
 
 async function startApolloServer(resolvers) {
   const app = express()
-  const typeDefs = buildSchema(await composeSchema('./gql'))
+  const typeDefs = await composeSchema('./gql')
   const httpServer = http.createServer(app)
   const server = new ApolloServer({
     typeDefs,

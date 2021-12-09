@@ -1,6 +1,7 @@
 {
   "name": "node-gql-schema-composer",
-  "version": "1.0.11",
+  "version": "1.0.12",
+  "description": "GraphQL schema composer from different chunks with 0.1 dependencies. Small and tiny, exactly what you are looking for",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
@@ -17,13 +18,15 @@
     "url": "https://github.com/nudelx/node-gql-schema-composer/issues/"
   },
   "keywords": [
-    "nodejs",
-    "gql",
     "graphql",
     "compose",
+    "nodejs",
+    "gql",
     "express",
     "schema",
     "dump",
-    "tool"
+    "tool",
+    "composer", 
+    "node"
   ]
 }
